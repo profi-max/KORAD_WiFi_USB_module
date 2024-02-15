@@ -57,13 +57,12 @@ In the NodeMcu dev board "FLASH" button connected to GPIO0, so you can use "FLAS
 </details>
 
 ## How to establish a connection with Wi-Fi Router.
-Push "WiFi Reset" button for 3 seconds. The ESP8266 module switch to access point mode. Open WiFi settings on your phone. Choose "KORAD bridge", no password needed. Then click "Configure WiFi", choose your router, enter password and click "Save". Now the ESP8266 module is in the station mode and connected to your wifi router.
+Push "WiFi Reset" button for 3 seconds. The ESP8266 module switches to access point mode. Open WiFi settings on your phone. Choose "KORAD bridge", no password needed. Then click "Configure WiFi", choose your router, enter password and click "Save". Now the ESP8266 module is in the station mode and connected to your wifi router.
 
 <image src="/Pictures/WifiManager.jpg" alt="WiFiManager">
 
 ## How to find out the local Wi-Fi IP address of ESP8266.
-Open the router's web page in a browser. View the list of clients.
-For DPS alternative firmware: Go to "Parameters" menu. Press the "SET" button. The IP address will be displayed for 3 seconds.
+Open the router's web page in a browser. View the list of clients. Look for "KORAD server" station.
 
 ## How to debug
 The hardware serial over UART1 is used at 115200 speed. GPIO02 is UART1 TX pin.
