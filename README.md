@@ -61,6 +61,7 @@ Open the router's web page in a browser. View the list of clients. Look for "KOR
 
 ## Video & Photo Gallery
 https://youtu.be/5IgYxfklCrM
+
 [![Watch the video](https://img.youtube.com/vi/5IgYxfklCrM/hqdefault.jpg)](https://www.youtube.com/embed/5IgYxfklCrM)
 ![Koradview](/Pictures/IMG_4754.JPG)
 
