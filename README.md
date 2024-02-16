@@ -54,7 +54,7 @@ In the NodeMcu dev board "FLASH" button connected to GPIO0, so you can use "FLAS
 ## Video & Photo Gallery
 <details>
 <summary>Click to view the Gallery</summary>
-![DPSview](/Pictures/IMG_4754.JPG)
+![Koradview](/Pictures/IMG_4754.JPG)
 </details>
 
 ## How to establish a connection with Wi-Fi Router.
