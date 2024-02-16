@@ -40,11 +40,12 @@ DPSmaster full review: https://youtu.be/1nZQ2FA08Fg
 ![DPSmaster](/Pictures/DPSmaster.jpg)
 
 ## Schematics
-Avoid simultaneous 5 volt power supply from different devices. Power up the development board either from USB or from KORAD. 
-In the final device, remove diode D1 so that the dev board is powered only from KORAD.
+
+First measure the voltage between pins 1 and 4 of the J9 connector. If the voltage is 5 volts, connect it to the VIN pin. If 3.3 volts, to  3V pin.
 In the NodeMcu dev board "FLASH" button connected to GPIO0, so you can use "FLASH" button as "WiFi Reset".
 
-![Korad_NodeMcu](/Pictures/korad_NodeMcu.jpg)
+![Korad_NodeMcu 5.0V](/Pictures/korad_NodeMcu.jpg)
+![Korad_NodeMcu 3.3V](/Pictures/korad_NodeMcu_33.jpg)
 <details>
 <summary>Click to view NodeMcu schematic</summary>
 <image src="/Pictures/NodeMCU_schematic.jpg" alt="NodeMCU">
@@ -53,7 +54,7 @@ In the NodeMcu dev board "FLASH" button connected to GPIO0, so you can use "FLAS
 ## Video & Photo Gallery
 <details>
 <summary>Click to view the Gallery</summary>
-![DPSview](/Pictures/IMG_4736.JPG)
+![DPSview](/Pictures/IMG_4754.JPG)
 </details>
 
 ## How to establish a connection with Wi-Fi Router.
