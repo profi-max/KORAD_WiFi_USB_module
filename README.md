@@ -21,7 +21,7 @@ Aliexpress page: https://aliexpress.ru/item/4000550036826.html
 
 ## How to flash ESP8266 (3 ways)
 1. Use finished firmware files from the folder **Binary**. Upload Flash Download Tools  from official page: https://www.espressif.com/en/support/download/other-tools
-Connect USB cable to your development board, run the application, select COM port and bin-file.
+Connect USB cable to your development board, run the application, select COM port and bin-file. When download is completed push "RST" (Reset) button to restart your dev board.
 2. Use Arduino IDE. Open the sketch from **Arduino** folder. Select NodeMCU 1.0 board. Install WiFiManager by tzapu library. Compile and upload the sketch to your dev board.
 3. Use Visual Studio Code + Platformio. Open project from **VSCode** folder. Build and upload the project.
 <details>
