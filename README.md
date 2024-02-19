@@ -65,6 +65,13 @@ https://youtu.be/5IgYxfklCrM
 [![Watch the video](https://img.youtube.com/vi/5IgYxfklCrM/hqdefault.jpg)](https://www.youtube.com/embed/5IgYxfklCrM)
 ![Koradview](/Pictures/IMG_4754.JPG)
 
+## KORAD Hardware OCP
+NOTE: You will not receive the DPSmaster "OCP error" in this case.
+```
+// uncomment the line below if you wish hardware OCP
+#define KORAD_HARDWARE_OCP
+```
+
 ## How to debug
 The hardware serial over UART1 is used at 115200 speed. GPIO02 is UART1 TX pin.
 ```

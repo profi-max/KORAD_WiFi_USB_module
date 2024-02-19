@@ -34,6 +34,9 @@ https://github.com/profi-max
 //  set define below to 1 ... 127
 #define MB_DEVICE_ADDRESS 1
 
+// uncomment the line below if you wish hardware OCP
+//#define KORAD_HARDWARE_OCP
+
 // uncomment the line below if you need debug via UART1 (GPIO02 TXD1)
 //#define MB_DEBUG
 //#define KORAD_DEBUG_TX
@@ -371,14 +374,19 @@ void KoradTransmitMessage(void)
 	uart_buffer.out = (uint8_t)gData.ONOFF;
 	uart_buffer.alarm = 0;
 	uart_buffer.b00 = 0;
+#ifdef KORAD_HARDWARE_OCP
+	if (gData.Profile[idx].PRFS & PROFILE_TRIGGER_OCP)
+		uart_buffer.ocp = 1;
+	else	
+#endif
 	uart_buffer.ocp = 0;
 	uart_buffer.mode = 0;
 	uart_buffer.dummy3 = 0;
 	uart_buffer.dummy4 = 0;
-  	uart_buffer.checksum = checksum((unsigned char *) &uart_buffer, sizeof(korad_uart_msg_t) - 1);
+  uart_buffer.checksum = checksum((unsigned char *) &uart_buffer, sizeof(korad_uart_msg_t) - 1);
 	
 	tx_out_onoff = uart_buffer.out;
-  	swSerial.write((const char *) &uart_buffer, sizeof(korad_uart_msg_t));
+  swSerial.write((const char *) &uart_buffer, sizeof(korad_uart_msg_t));
 	swSerial.flush();
 	wait_for_korad_response = true;
 	korad_time_stamp = millis();
@@ -411,7 +419,6 @@ void KoradReceiveMessage(void)
 				gData.ONOFF = uart_buffer.out;	
 		}
 		wait_for_korad_response = false;
-		bytesReady = swSerial.available();	
 	}
 }
 
