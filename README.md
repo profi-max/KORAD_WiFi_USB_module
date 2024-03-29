@@ -90,3 +90,6 @@ https://profimaxblog.ru/modbus-communication-protocol-2/
 ## Known bugs
 Unfortunately when output is on and at the moment of changing Uset or Iset,  the KORAD response is Iout = 0. 
 I don't know what to do about it.
+
+## Discussion of the project / Forum
+https://profimaxblog.ru/forums/topic/korad-wifi-usb-module-esp8266/
